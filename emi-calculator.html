@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Start Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="PRIMEAMENITY" />
+	<!-- <meta name="keywords" content="Creative, Digital, multipage, landing, freelancer template" />
+	<meta name="author" content="ThemeOri"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title of Site -->
+	<title>PRIMEAMENITY</title>
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="assets/img/favicon01.png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="assets/css/all.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Nice Select CSS -->
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+	<!-- Magnific -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- Mean menu -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/sass/style.css">
+</head>
+
+<body>
+	<!-- Preloader start --
+	<div class="theme-loader">
+		<div class="spinner">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
+		</div>
+	</div>
+	<!-- Preloader end -->	
+	
+	<!-- Header Area Start -->
+	<div class="header__area">
+		<!-- Top Bar Area Start -->
+		<div class="container">
+			<div class="header__area-top-bar">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 col-md-7">
+						<div class="header__area-top-bar-left">
+							<ul>								
+								<li><a href="mailto:contactprimeamenity@gmail.com"><i class="far fa-envelope"></i>contactprimeamenity@gmail.com</a></li>
+							</ul>
+						</div>	
+					</div>
+					 <div class="col-xl-6 col-lg-6 col-md-5">
+						<div class="header__area-top-bar-right">
+							<div class="header__area-top-bar-right-item">
+								<div class="header__area-top-bar-right-item-menu">
+									<ul>
+										<li><a href="tel:9225107515"><i class="far fa-phone-alt"></i>+91 9225107515</a></li>
+								        <li><a href="tel:8177888090"><i class="far fa-phone-alt"></i>+91 8177888090</a></li>
+									</ul>
+								</div>
+							</div> 
+						</div>	
+					</div> 
+				</div>
+			</div>
+		</div>
+		<!-- Top Bar Area End -->
+		
+		<!-- Menu Bar Area Start -->
+		<div class="container">
+			<div class="header__area-menu-bar">
+				<div class="row align-items-center">
+					<div class="col-xl-3 col-lg-3">
+						<div class="header__area-menu-bar-left">
+							<div class="header__area-menu-bar-left-logo">
+								<a href="index.html"><img src="assets/img/logo-001.png" alt=""></a>
+							</div>
+							<div class="responsive-menu"></div>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-8">
+						<div class="header__area-menu-bar-main-menu header-meanmenu">
+							<ul id="mobilemenu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="services.html">Services</a></li>
+								<!-- <li><a href="#">Services<i class="far fa-angle-down"></i></a>
+									<ul class="sub-menu">
+										<li><a href="services.html">Services</a>
+										</li>
+										<li><a href="services-details.html">Services Details</a>
+										</li>
+									</ul>
+								</li> -->
+								<li><a href="emi-calculator.html">Emi-Calculator</a></li>	
+								<li><a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Menu Bar Area End -->
+	</div>
+	<!-- Header Area End -->
+	<!-- Page Header Start End -->
+	<div class="page__banner" data-background="assets/img/page/page1.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="page__banner-content">
+                        <span class="subtitle-two">Emi</span>
+						<ul>
+							<li><a href="index.html">Home</a><span>|</span></li>
+							<li>EMI Calculator</li>
+						</ul>
+						<h2>EMI Calculator</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header Area End -->       
+
+    <!-- emi-calculator -->
+
+    <div class="emi-calculator">
+
+        <div class="container">
+            <h1>Loan Calculator</h1>
+            <div class="row">
+              <div class="col col-main">
+                <h2>Enter Loan Data</h2>
+                <label for="amount" class="label">Required loan amount</label>
+                <div class="input-wrapper">
+                  <span class="input-addon">₹</span>
+                  <input id="amount" class="input-field" type="text" value="100,000">
+                </div>
+                <label for="apr" class="label">Annual interest rate</label>
+                <div class="input-wrapper">
+                  <input id="apr" class="input-field" type="text" value="5">
+                  <span class="input-addon">%</span>
+                </div>
+                <label for="years" class="label">Repayment period</label>
+                <div class="input-wrapper">
+                  <input id="years" class="input-field" type="text" value="20">
+                  <span class="input-addon">years</span>
+                </div>
+                <button onclick="calculate();">Calculate</button>
+              </div>
+
+              <div class="col">
+                <h2>Payments</h2>
+                <div class="output-wrapper">
+                  <p class="label">Monthly payment</p>
+                  <p class="output-value">₹<span id="payment"></span></p>
+                </div>
+                <div class="output-wrapper">
+                  <p class="label">Total payments</p>
+                  <p class="output-value">₹<span id="total"></span></p>
+                </div>
+                <div class="output-wrapper">
+                  <p class="label">Total interest payments</p>
+                  <p class="output-value">₹<span id="totalinterest"></span></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+    </div>
+    <!-- emi-calculator -->
+
+			
+
+	<!-- Footer Top Start -->
+	<div class="footer__top footer__top-page">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  order-last order-lg-first">
+					<div class="footer__top-item">
+						<div class="footer__top-item-info">
+							<div class="footer__top-item-info-icon">
+								<i class="fal fa-phone-volume"></i>
+							</div>
+							<div class="footer__top-item-info-content">
+								<span>Contact Us Free</span>
+								<h5><a href="tel:(+91) 9225107515">(+91) 9225107515</a></h5>
+								<h5><a href="tel:(+91) 8177888090">(+91) 8177888090</a></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4">
+					<div class="footer__top-item">
+						<div class="footer__top-item-logo">
+							<a href="index.html"><img src="assets/img/logo-01.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 sm-mb-30">
+					<div class="footer__top-item t-right">
+						<div class="footer__top-item-info justify-content-end">
+							<div class="footer__top-item-info-content order-last order-lg-first">
+								<span>Contact Us Free</span>
+								<h5><a href="mailto:contactprimeamenity@gmail.com">contactprimeamenity@gmail.com</a></h5>
+							</div>
+							<div class="footer__top-item-info-icon">
+								<i class="fal fa-envelope-open-text"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer Top End -->
+	<!-- Footer Two Start -->
+	<div class="footer__two-page" data-background="assets/img/bg/footer-bg-2.png">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2 col-lg-6 col-md-5 col-sm-5 xl-mb-30">
+					<div class="footer__two-page-widget">
+						<h5 class="mb-25">Main Links</h5>
+						<div class="footer__two-page-widget-menu">
+							<ul>
+								<li><a href="about.html"><i class="far fa-angle-right"></i>Company</a></li>
+								<li><a href="about.html"><i class="far fa-angle-right"></i>About Us</a></li>
+								<li><a href="services.html"><i class="far fa-angle-right"></i>Services</a></li>	
+								<li><a href="#"><i class="far fa-angle-right"></i>Clients</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+				<div class="col-xl-3 col-lg-6 col-md-7 col-sm-7 sm-mb-30">
+					<div class="footer__two-page-widget">
+						<h5 class="mb-25">Other Pages</h5>
+						<div class="row">
+							<div class="col-6">
+								<div class="footer__two-page-widget-menu">
+									<ul>
+										<li><a href="#"><i class="far fa-angle-right"></i>Testimonials</a></li>
+										<li><a href="contact.html"><i class="far fa-angle-right"></i>Get Quote</a></li>
+										<li><a href="CHANNEL-PARTNER.html"><i class="far fa-angle-right"></i>Become a Channel Partner</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="footer__two-page-widget-menu">
+									<ul>
+										<li><a href="emi-calculator.html"><i class="far fa-angle-right"></i>Emi Calculator</a></li>
+										<li><a href="contact.html"><i class="far fa-angle-right"></i>Contact</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-xl-4 col-lg-6 col-md-6 md-mb-30">
+					<div class="footer__two-page-widget">
+						<h5 class="mb-25">Connect with us</h5>
+						<div class="footer__two-page-widget-contact">
+							<!-- <p>Subscribe to out newsletter today to receive updates on the latest news, releases and special offers. We respect your privacy. Your information is safe.</p>
+							<div class="footer__two-page-widget-contact-subscribe">
+								<i class="far fa-envelope"></i>
+								<form action="#">
+									<input type="text" name="email" placeholder="Email Address" required="">
+									<button type="submit">Send</button>
+								</form>
+							</div> -->
+							<div class="footer__two-page-widget-contact-social">
+								<h6>Social Network :</h6>
+								<ul>
+									<li><a href="https://www.facebook.com/PrimeAmenityBoisar?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+									</li>
+									<li><a href="https://instagram.com/prime_amenity_24?igshid=NGVhN2U2NjQ0Yg==" target="_blank"><i class="fab fa-instagram"></i></a>
+									</li>
+									<!-- <li><a href="#"><i class="fab fa-behance"></i></a>
+									</li> -->
+									<li><a href="https://www.youtube.com/@PRIMEAMENITY/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+									</li>
+									<!-- <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+									</li> -->
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-6 col-md-6">
+					<div class="footer__two-page-widget">
+						<h5 class="mb-25">News & Feeds</h5>
+						<div class="footer__two-page-widget-post">
+							<div class="footer__two-page-widget-post-item">
+								<div class="footer__two-page-widget-post-item-image">
+									<a href="https://instagram.com/prime_amenity_24?igshid=NGVhN2U2NjQ0Yg=="><img src="assets/img/blog/news-feeds-post.jpg" alt=""></a>
+								</div>
+								<div class="footer__two-page-widget-post-item-content">
+									<span>September 16, 2023</span>
+									<h6><a href="https://instagram.com/prime_amenity_24?igshid=NGVhN2U2NjQ0Yg==" target="_blank">50th anniversary completed</a></h6>
+								</div>
+							</div>
+							<!-- <div class="footer__two-page-widget-post-item">
+								<div class="footer__two-page-widget-post-item-image">
+									<a href="case-details.html"><img src="assets/img/blog/post-4.jpg" alt=""></a>
+								</div>
+								<div class="footer__two-page-widget-post-item-content">
+									<span>June 09, 2022</span>
+									<h6><a href="news-details.html">The most successful businesses</a></h6>
+								</div>
+							</div> -->
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer Two End -->
+	<!-- Copyright Area Start -->
+	<div class="copyright__two">
+		<div class="container">
+			<div class="row align-items-center">
+				<!-- <div class="col-xl-7 col-lg-7"> -->
+					<div class="copyright__two-content">
+						<p>Copyright & Design By <a href="mailto:arunsahoo0196@gmail.com">@ArunSahoo</a> - 2023</p>
+					</div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+	<!-- Copyright Area End -->
+
+	<!-- Scroll Btn Start -->
+	<div class="scroll-up">
+		<svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+	<!-- Scroll Btn End -->
+
+
+	<!-- Main JS -->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Counter up -->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!-- Popper JS -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- Progressbar JS -->
+	<script src="assets/js/progressbar.min.js"></script>
+	<!-- Magnific JS -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Nice Select JS -->
+	<script src="assets/js/jquery.nice-select.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<!-- Isotope JS -->
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<!-- Mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- Custom JS -->
+	<script src="assets/js/custom.js"></script>
+   
+    <!-- emi-calculator -->
+
+    <script>
+        "use strict";
+
+function calculate() {
+  // Look up the input and output elements in the document
+  var amount = document.getElementById("amount");
+  var apr = document.getElementById("apr");
+  var years = document.getElementById("years");
+  var payment = document.getElementById("payment");
+  var total = document.getElementById("total");
+  var totalinterest = document.getElementById("totalinterest");
+  
+  // Get the user's input from the input elements.
+  // Assume all input is valid (for now).
+  // Convert interest rate from percentage to decimal
+  // Convert from annual rate to monthly rate
+  // Convert payment period in years to number of monthly payments
+  var principal = parseFloat(amount.value.replace(/,/g, ''));
+  var rate = parseFloat(apr.value) / 100 / 12;
+  var payments = parseFloat(years.value) * 12;
+  
+  // Compute the monthly payment
+  var x = Math.pow(1 + rate, payments);
+  var monthly = (principal * x * rate) / (x - 1);
+  
+  // If the result is a finite number, the user's input was good
+  // and we have meaningful results to display
+  if (isFinite(monthly)) {
+    // Fill in the output fields, rounding to 2 decimal places
+    payment.innerHTML = formatNumber(monthly, 2);
+    total.innerHTML = formatNumber(monthly * payments, 2);
+    totalinterest.innerHTML = formatNumber((monthly * payments) - principal, 2);
+    
+    // Finally, chart loan balance, interest, and equity payments
+    chart(principal, rate, monthly, payments)
+  }
+  else {
+    // Result was NaN or Infinite, 
+    // which means the input was incomplete or invalid.
+    // Clear any previously-displayed output.
+    payment.innerHTML = "";
+    total.innerHTML = "";
+    totalinterest.innerHTML = "";
+    chart();  // With no arguments, clears the chart
+  }
+}
+
+// Chart the monthly loan balance, interest, and
+// equity in an HTML <canvas> element.
+// If called with no arguments, then just erase
+// any previously drawn chart.
+function chart(principal, rate, monthly, payments) {
+  var graph = document.getElementById("graph");
+  graph.width = graph.width; // Magic to clear and reset the canvas element
+  
+  // If we're called with no arguments, 
+  // or if the browser does not support graphics
+  // in a <canvas> element, then just return now.
+  if (arguments.length === 0 || !graph.getContext) return;
+  
+  // Get the "context" object for the <canvas>
+  // that defines the API
+  // All drawing is done with this object
+  var g = graph.getContext("2d");
+  
+  var width = graph.width, height = graph.height; // Get canvas size
+  
+  // These functions convert payment numbers
+  // and dollar amounts to pixels
+  function paymentToX(n) {
+    return n * width/payments;
+  }
+  function amountToY(a) {
+    return height - (a * height / (monthly * payments * 1.05));
+  }
+  
+  // Payments are a straight line from (0,0)
+  // to (payments, monthly * payments)
+  g.moveTo(paymentToX(0), amountToY(0)); // Start at lower left
+  g.lineTo(paymentToX(payments), // Draw to upper right
+           amountToY(monthly * payments));
+  g.lineTo(paymentToX(payments), amountToY(0)); // Down to lower right
+  g.closePath(); 	// And back to start
+  g.fillStyle = "#72AAD0";	// Light blue
+  g.fill();	// Fill the triangle
+  
+  // Cumulative equity is non-linear and trickier to chart
+  var equity = 0;
+  g.beginPath();
+  g.moveTo(paymentToX(0), amountToY(0));	// Start at lower left
+  for (var p = 1; p <= payments; p++) {
+    // For each payment, figure out how much is interest
+    var thisMonthsInterest = (principal - equity) * rate;
+    equity += (monthly - thisMonthsInterest);	// The rest goes to equity
+    g.lineTo(paymentToX(p), amountToY(equity));	// Line to this point
+  }
+  g.lineTo(paymentToX(payments), amountToY(0));	// Line back to X axis
+  g.closePath();	// And back to starting point
+  g.fillStyle = "#40FD65";
+  g.fill(); // Fill area under curve
+  
+  // Loop again, as above, but chart loan balance as a black line
+  var bal = principal;
+  g.beginPath();
+  g.moveTo(paymentToX(0), amountToY(bal));
+  for (var p = 1; p <= payments; p++) {
+    var thisMonthsInterest = bal*rate;
+    bal -= (monthly - thisMonthsInterest);	// The rest goes to equity
+    g.lineTo(paymentToX(p), amountToY(bal));	// Draw line to this point
+  }
+  
+  g.lineWidth = 2;
+  g.strokeStyle = "#444"
+  g.stroke();		// Draw the balance curve
+  
+  // Now make yearly tick marks and year numbers on X axis
+  g.textAlign = "center";		// Center text over ticks
+  g.fillStyle = "#444";
+  g.font = "0.6em 'Open Sans'";
+  var y = amountToY(0);			// Y coordinate of X axis
+  for (var year=1; year*12 <= payments; year++) { 	// For each year
+    var x = paymentToX(year * 12);	// Compute tick position
+    g.fillRect(x - 0.5, y - 3, 1, 3);		// Draw the tick
+    if (year === 1) g.fillText("Year", x, y - 5);		// Label the axis
+    if (year % 5 === 0 && year * 12 !== payments) 	// Number every 5 years
+      g.fillText(String(year), x, y - 5);
+  }
+  
+  // Mark payment amounts along the right edge
+  g.textAlign = "right";	// Right-justify the text
+  g.textBaseline = "middle"	// Center it vertically
+  var ticks = [monthly * payments, principal];	// The two points we'll mark
+  var rightEdge = paymentToX(payments);		// X coordinate of Y axis
+  for (var i=0; i < ticks.length; i++) {	// For each of the 2 points
+    var y = amountToY(ticks[i]);		// Compute y position of tick
+    g.fillRect(rightEdge - 3, y - 0.5, 3, 1);	// Draw the tick mark
+    g.fillText(String(formatNumber(ticks[i]), 2), rightEdge - 5, y); 		// And label it
+  }
+}
+
+function formatNumber (num, decimals) {
+    return num.toFixed(decimals).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+    // http://blog.tompawlak.org/number-currency-formatting-javascript
+}
+    </script>
+     
+</body>
+
+</html>
